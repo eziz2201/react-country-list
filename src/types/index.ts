@@ -1,5 +1,3 @@
-
-
 export interface ICountry {
     name: string,
     region: string,

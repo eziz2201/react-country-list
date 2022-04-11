@@ -1,10 +1,10 @@
-import React from 'react';
-import CountryList from './components/CountryList/CountryList';
-import countryData from './country-data.json';
-import { ICountry} from './types';
+import React from "react";
+import CountryList from "./components/CountryList/CountryList";
+import countryData from "./country-data.json";
+import { ICountry } from "./types";
 
 function App() {
-  const countries: ICountry[] = countryData.map(country => ({
+  const countries: ICountry[] = countryData.map((country) => ({
     name: country.name.common,
     region: country.region,
     capital: country.capital[0],
@@ -13,11 +13,10 @@ function App() {
     population: country.population,
   }));
 
-  
   return (
     <div className="App container">
-      <h1 className='countryList_title'>Country List</h1>
-      <CountryList countries={countries}/>
+      <h1 className="countryList_title">Country List</h1>
+      <CountryList countries={countries} />
     </div>
   );
 }
