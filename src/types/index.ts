@@ -6,9 +6,6 @@ export interface ICountry {
     area: number,
     population: number,
 }
-export interface ICountryList {
-    countries: ICountry[]
-}
 
 export interface IBadge {
     color: Color;

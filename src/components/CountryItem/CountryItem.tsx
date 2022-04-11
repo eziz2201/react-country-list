@@ -12,37 +12,26 @@ const CountryItem = ({
   population,
 }: ICountry) => {
   return (
-    <li className={`countryList_item row align-items-center  border pe-2`}>
-      <span className="countryList_country col fw-bold">
-        <img
-          className="countryList_flag me-3"
-          width="120px"
-          height="80px"
-          src={flag}
-          alt={flag}
-        />
-        {name}
+    <li className={"CountryItem list-group-item d-flex  align-items-center  row"}>
+      <span className="col">
+        <img width="100px" src={flag} alt={flag} />
       </span>
+      <span className="col ">{name}</span>
+      <span className="col">{region}</span>
+      <span className="col ">{capital}</span>
 
-      <span className="countryList_text col row fw-bold">
-        <span className="countryList_region col ">{region}</span>
-        <span className="countryList_capital col ">{capital}</span>
-      </span>
-
-      <span className="countryList_badge col col-xs-5 row">
-        <Badge
-          type={"area"}
-          color={Color.Primary}
-          value={area}
-          textColor={Color.Light}
-        />
-        <Badge
-          type={"population"}
-          color={Color.Secondary}
-          value={population}
-          textColor={Color.Light}
-        />
-      </span>
+      <Badge
+        type={"area"}
+        color={Color.Primary}
+        value={area}
+        textColor={Color.Light}
+      />
+      <Badge
+        type={"population"}
+        color={Color.Secondary}
+        value={population}
+        textColor={Color.Light}
+      />
     </li>
   );
 };
