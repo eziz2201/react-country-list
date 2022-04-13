@@ -13,10 +13,10 @@ const CountryItem = ({
 }: ICountry) => {
   return (
     <li className={"CountryItem list-group-item d-flex  align-items-center  row"}>
-      <img className="countries_flag col" width="100px" src={flag} alt={flag} />
-      <span className="countries_name col ">{name}</span>
-      <span className="countries_region col">{region}</span>
-      <span className="counties_capital col ">{capital}</span>
+      <span className="countries_flag col"><img className="countries_flag--img" width="100px" src={flag} alt={flag} /></span>
+      <span className="countries_name col fw-bold">{name}</span>
+      <span className="countries_region col fw-bold">{region}</span>
+      <span className="counties_capital col fw-bold">{capital}</span>
 
       <Badge
         type={"area"}
