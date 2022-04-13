@@ -11,7 +11,6 @@ export interface IBadge {
     color: Color;
     type: BadgeLabel;
     value: number;
-    textColor: Color;
 };
 
 export const enum Color {
